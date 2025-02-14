@@ -13,6 +13,13 @@ namespace ClassLibTeam02.Data.Repositories
         static StudentRepository()
         {
             StudentList = new List<Student>();
+            DefaultData();
+        }
+
+        private static void DefaultData()
+        {
+            Add("John", "Doe");
+            Add("Jane", "Doe");
         }
         public static List<Student> StudentList { get; set; } 
 
